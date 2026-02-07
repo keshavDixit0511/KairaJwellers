@@ -1,0 +1,293 @@
+.ourStoryMainContainer h1{
+    text-align: center;
+    font-size: clamp(1.7rem, 3vw , 3rem);
+    color: rgba(56, 9, 9, 0.756);
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ourStoryMainContainer{
+    width: 100%;
+}
+
+.ourStoryContainer{
+    display: flex;
+    gap: 2.9rem;
+    width: 100%;
+    display: flex;
+    height: 100%;  
+}
+
+.leftContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: end; 
+    padding: 2rem;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
+}
+
+.leftcircle{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.rightCircle{
+   display: flex;
+   align-items: center;
+   gap: 0.6rem;
+}
+
+.rightContainer{
+     margin-top: 34%;
+     padding: 2rem;
+}
+
+.rightContainer p{
+  padding: 2rem;
+    border-radius: 0.9rem;
+    background-color: rgba(237, 173, 173, 0.129);
+    font-size: clamp(0.9rem, 2vw , 1.1rem);
+    color: rgba(56, 9, 9, 0.47);
+   
+}
+
+.leftContainer h2{
+font-size: clamp(1.8rem, 4vw , 2.1rem);
+font-weight: 500;
+color: rgba(56, 9, 9, 0.756);
+}
+
+.rightContainer h2{
+font-size: clamp(1.8rem, 4vw , 2.1rem);
+font-weight: 500;
+color: rgba(56, 9, 9, 0.756);
+}
+
+.leftContainer p{
+    padding: 2rem;
+    border-radius: 0.9rem;
+    background-color: rgba(237, 173, 173, 0.129) ;
+    font-size: clamp(0.9rem, 2vw , 1.1rem);
+    color: rgba(56, 9, 9, 0.47);
+}
+
+.icons{
+    font-size: 2rem;
+    color: rgba(56, 9, 9, 0.47);
+}
+
+.circle{
+    background-color: black;
+    width: 20%;
+    height: 20%;
+}
+
+.line {
+  width: 2px;         /* line ki width */
+  height: 70rem;          /* line ki thickness */
+  background-color: black;
+  margin: 10px auto;  /* center karne ke liye */
+}
+
+
+@media (max-width: 780px) {
+  .ourStoryContainer {
+    gap: 1.5rem; /* reduce only gap */
+    padding: 1rem;
+  }
+
+  .left {
+    gap: 6rem; /* reduce spacing */
+  }
+
+  .rightContainer {
+    margin-top: 70%; /* keep SAME layout */
+    padding: 1rem;
+  }
+
+  .rightContainer p,
+  .leftContainer p {
+    padding: 1rem;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+  }
+
+  .leftContainer h2,
+  .rightContainer h2 {
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+  }
+
+  .icons {
+    font-size: 1.3rem;
+  }
+
+  .circle {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.ourStoryMainContainer h1{
+    text-align: center;
+    font-size: clamp(1.7rem, 3vw , 3rem);
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ourStoryMainContainer{
+    width: 100%;
+}
+
+.ourStoryContainer{
+    display: flex;
+    gap: 2.9rem;
+    width: 100%;
+    display: flex;
+    height: 100%;  
+}
+
+.leftContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: end; 
+    padding: 2rem;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
+}
+
+.leftcircle{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.rightCircle{
+   display: flex;
+   align-items: center;
+   gap: 0.6rem;
+}
+
+.rightContainer{
+     margin-top: 34%;
+     padding: 2rem;
+}
+
+.rightContainer p{
+  padding: 2rem;
+    border-radius: 0.9rem;
+    background-color: rgba(237, 173, 173, 0.129);
+    font-size: clamp(0.9rem, 2vw , 1.1rem);
+   
+}
+
+.leftContainer h2{
+font-size: clamp(1.8rem, 4vw , 2.1rem);
+font-weight: 500;
+}
+
+.rightContainer h2{
+font-size: clamp(1.8rem, 4vw , 2.1rem);
+font-weight: 500;
+}
+
+.leftContainer p{
+    padding: 2rem;
+    border-radius: 0.9rem;
+    background-color: rgba(237, 173, 173, 0.129) ;
+    font-size: clamp(0.9rem, 2vw , 1.1rem);
+}
+
+.icons{
+    font-size: 2rem;
+}
+
+.circle{
+    background-color: black;
+    width: 20%;
+    height: 20%;
+}
+
+.line {
+  width: 2px;         /* line ki width */
+  height: 70rem;          /* line ki thickness */
+  background-color: black;
+  margin: 10px auto;  /* center karne ke liye */
+}
+
+
+
+@media (max-width: 870px) {
+
+.rightContainer {
+    margin-top: 16rem; /* keep SAME layout */
+    padding: 1rem;
+  }
+
+}
+
+
+
+
+@media (max-width: 780px) {
+  .ourStoryContainer {
+    gap: 1.5rem; /* reduce only gap */
+    padding: 1rem;
+  }
+
+  .left {
+    gap: 6rem; /* reduce spacing */
+  }
+
+  .rightContainer {
+    margin-top: 70%; /* keep SAME layout */
+    padding: 1rem;
+  }
+
+  .rightContainer p,
+  .leftContainer p {
+    padding: 1rem;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+  }
+
+  .leftContainer h2,
+  .rightContainer h2 {
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+  }
+
+  .icons {
+    font-size: 1.3rem;
+  }
+
+  .circle {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 673px) {
+
+    .rightContainer {
+    margin-top: 90%; /* keep SAME layout */
+    padding: 1rem;
+  }
+
+}
+
+
+@media (max-width: 440px) {
+
+.rightContainer {
+    margin-top: 16rem; /* keep SAME layout */
+    padding: 1rem;
+  }
+
+}

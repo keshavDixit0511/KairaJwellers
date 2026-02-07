@@ -1,0 +1,25 @@
+{
+  "store": [
+    {
+      "name": "Gurugram Store",
+      "address": "KS Diamond Jewellers, Sector 23, Gurugram, Haryana",
+      "phone": "+91-7065546678",
+      "mapsrc": "https://www.google.com/maps?q=KS+Diamond+Jewellers,+Sector+23,+Gurugram,+Haryana&output=embed",
+      "image": "https://res.cloudinary.com/stackashu/image/upload/v1753431877/shopimg3_czdbu8.jpg"
+    },
+    {
+      "name": "Greater Noida West",
+      "address": "City Centre, Greater Noida, Uttar Pradesh",
+      "phone": "+91-7065546678",
+      "mapsrc": "https://www.google.com/maps?q=City+Centre,+Greater+Noida,+Uttar+Pradesh&output=embed",
+      "image": "https://res.cloudinary.com/stackashu/image/upload/v1753431877/shopimg2_r8xuia.jpg"
+    },
+    {
+      "name": "City plaza Store",
+      "address": "City Plaza, Greater Noida",
+      "phone": "+91-7065546678",
+      "mapsrc": "https://www.google.com/maps?q=City+Plaza,+Greater+Noida&output=embed",
+      "image": "https://res.cloudinary.com/stackashu/image/upload/v1753431876/shopimg1_ycjgfd.jpg"
+    }
+  ]
+}

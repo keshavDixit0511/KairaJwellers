@@ -1,0 +1,183 @@
+ .FrachiesQuaryContainer{
+   width: 100%;
+}
+
+.FrachiesQuaryContainer .franchiesQuaryheading{
+    text-align: center;
+}
+
+.FrachiesQuaryContainer .frenchiesQuaryDetails{
+    width: 100%;
+    height: 3rem;
+    background-color: #fddddd83;
+    padding: 0rem 2rem;
+    border-radius: 0.7rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.FrachiesQuaryContainer .frenchiesQuaryDetails p{
+    font-size: 1.1rem;
+}
+
+.FrachiesQuaryContainer .frenchiesQuaryDetails .iconcsMore{
+     font-size: 1.1rem;
+}
+
+.FrachiesQuaryContainer .frenchiesQuaryBox .rotateIcon{
+      transform: rotate(180deg);
+  transition: transform 0.3s ease;
+
+}
+
+.FrachiesQuaryContainer .frenchiesDetailSection{
+    padding: 2rem;
+}
+
+.FrachiesQuaryContainer .frenchiesQuaryBox .frenchiesQuaryBox{
+    width: 100%;
+    background-color: #fee4e456;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.6rem;
+    padding-top: 0.8rem;
+    box-shadow: 3px 2px 8px rgba(0,0,0,0.12);
+    padding: 0 2rem;
+}
+
+.frenchiesQuaryBox p {
+    line-height: 0.1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.FrachiesQuaryContainer .paginationControls{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 2rem;
+}
+
+.FrachiesQuaryContainer .paginationControls .previweICone {
+    transform: rotate(180deg);
+    color: black;
+}
+
+.FrachiesQuaryContainer .paginationControls .preview{
+    background-color: rgb(230, 98, 98);
+}
+
+.FrachiesQuaryContainer .paginationControls .preview:hover{
+    background-color: rgb(224, 82, 82);
+}
+
+.FrachiesQuaryContainer .paginationControls .next{
+    background-color: rgb(74, 204, 115);
+}
+
+.FrachiesQuaryContainer .paginationControls button{
+    background-color: #d19d9d8b;
+    padding: 0.2rem 0.7rem;
+}
+
+.FrachiesQuaryContainer .paginationControls button:hover{
+    background-color: rgb(17, 182, 17);
+} 
+
+@media (max-width: 600px) {
+  .frenchiesQuaryBox p {
+    line-height: 0.1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 12px;    
+}
+
+}
+
+@media (max-width: 700px) {
+  .frenchiesQuaryBox p {
+    line-height: 0.1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 12px;
+    
+}
+}
+
+
+@media (max-width: 500px) {
+  .frenchiesQuaryBox p {
+    line-height: 0.1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 8px;
+    
+}
+}
+
+@media (max-width: 400px) {
+  .frenchiesQuaryBox p {
+    line-height: 0.1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 6px;
+}
+}
+
+/* .frenchiesQuaryExpanded {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+  margin-top: 10px;
+  background: #fafafa;
+  border-radius: 8px;
+}
+
+.queryColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 150px;
+  font-weight: bold;
+  color: #333;
+}
+
+.valueColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #555;
+  flex: 1;
+}
+
+.frenchiesQuaryExpanded p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.frenchiesQuaryDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #f1f1f1;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.rotateIcon {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.iconcsMore {
+  transition: transform 0.3s ease;
+} */

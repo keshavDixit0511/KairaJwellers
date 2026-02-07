@@ -1,0 +1,318 @@
+.active {
+  color: rgb(187, 79, 79) !important;
+  font-weight: bold;
+  border-bottom: 2px solid rgb(187, 79, 79);
+  background: rgba(187, 79, 79, 0.07);
+  transition: color 0.2s, border-bottom 0.2s, background 0.2s;
+}
+.header_OuterBox {
+  position: relative;
+  background: white;
+  z-index: 5;
+  padding: 0rem 4rem;
+  box-shadow: 0 12px 32px 0 rgba(187, 79, 79, 0.22),
+    0 4px 16px 0 rgba(187, 79, 79, 0.13), 0 1.5px 6px 0 rgba(187, 79, 79, 0.1);
+}
+.header_InnerBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.jewellery_div {
+  position: absolute;
+  top: 96%;
+  left: 0%;
+  width: 100%;
+  border-top: 1px solid rgb(255, 235, 235);
+  background: white;
+  /* box-shadow: 0 10px 20px 0px rgba(187, 79, 79, 0.5); */
+  
+  z-index: 10;
+  height: 50vh;
+}
+
+@media (max-width: 1024px) {
+  .jewellery_div {
+   
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .jewellery_div {
+   
+    height: auto;
+  }
+}
+@media (max-width: 490px) {}
+@media (max-width: 390px) {}
+
+.header_InnerBox img {
+  width: 10rem;
+  cursor: pointer;
+}
+.hamburger {
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+.cross_Nav {
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: none;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+.nav li {
+  color: rgb(179, 100, 100);
+  position: relative;
+  cursor: pointer;
+  font-size: 1.1rem;
+  list-style: none;
+  display: inline-block;
+}
+
+.left,
+.right {
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  background-color:rgb(179, 100, 100);
+  display: block;
+}
+
+.left {
+  left: 0;
+  width: 0;
+  transition: all 0.5s ease;
+  transition-delay: 0.2s;
+}
+
+.right {
+  right: 0;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+li:hover .left {
+  width: 100%;
+}
+
+li:hover .right {
+  width: 0;
+}
+
+.telephone_Svg {
+  width: 30px;
+  height: 30px;
+}
+.nav_Wrapper {
+  overflow: hidden;
+}
+.Contact {
+  border: 1px solid rgb(186, 117, 117);
+  border-radius: 30px;
+  padding: 0rem 1rem;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 1s ease;
+}
+.Contact:hover{
+  background: #fff3f3;
+}
+.Contact h1 {
+  font-size: 1rem;
+  color: rgb(187, 79, 79);
+}
+@media (max-width: 900px) {
+  .nav li span {
+    display: none;
+  }
+  .left,
+  .right {
+    display: none;
+  }
+  .header_OuterBox {
+    padding: 0.5rem 1rem;
+  }
+  .header_InnerBox {
+    gap: 1rem;
+  }
+  .header_InnerBox img {
+    width: 7rem;
+  }
+  .nav {
+    gap: 1rem;
+  }
+  .Contact {
+    padding: 0.3rem 0.7rem;
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .header_OuterBox {
+    padding: 0.5rem 0.7rem;
+  }
+  .header_InnerBox {
+    gap: 0.7rem;
+  }
+  .header_InnerBox img {
+    width: 10rem;
+  }
+  .nav_Wrapper {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4rem 1rem;
+    z-index: 2;
+    background: rgb(255, 234, 234);
+    height: 100vh;
+  }
+  .nav_WrapperClose {
+    display: none;
+    width: 0%;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav_WrapperOpen {
+    width: 40%;
+    display: block;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .hamburger {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-top: 8px;
+  }
+  .cross_Nav {
+    display: block;
+    width: 6vh;
+    right: 1.4rem;
+    height: 6vh;
+  }
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+    width: 100%;
+    padding: 0;
+  }
+  .nav div {
+    border-bottom: 1px solid white;
+    width: 100%;
+  }
+  .nav_RightBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    margin-right: 15px;
+  }
+  .nav li {
+    font-size: 1.5rem;
+    padding: 0.2rem 0;
+  }
+  .Contact {
+    margin-right: 20px;
+    padding: 0.2rem 0.8rem;
+    gap: 0.6rem;
+    border-radius: 50px;
+    margin-top: 0.5rem;
+  }
+  .Contact h1 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 480px) {
+  .header_OuterBox {
+    padding: 0.5rem 0.5rem;
+  }
+  .header_InnerBox {
+    gap: 0.5rem;
+  }
+  .cross_Nav {
+    display: block;
+    width: 4vh;
+    right: 1rem;
+    height: 4vh;
+  }
+  .header_InnerBox img {
+    width: 6rem;
+  }
+  .telephone_Svg {
+    width: 2.5vh;
+    height: 2.5vh;
+  }
+  .hamburger {
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    display: block;
+  }
+  .nav div {
+    border-bottom: 1px solid white;
+    width: 100%;
+  }
+  .nav_Wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2.5rem 1rem;
+    z-index: 2;
+    width: 50%;
+    height: 100vh;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1), display 0.4s,
+      opacity 0.4s;
+    opacity: 1;
+    display: block;
+  }
+  .nav_WrapperClose {
+    width: 0%;
+    opacity: 0;
+    display: none;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1), display 0.4s,
+      opacity 0.4s;
+  }
+  .nav_WrapperOpen {
+    width: 40%;
+    opacity: 1;
+    display: block;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1), display 0.4s,
+      opacity 0.4s;
+  }
+  .nav_RightBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+  }
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+    width: 100%;
+    padding: 0;
+  }
+  .nav li {
+    font-size: 0.95rem;
+    padding: 0.15rem 0;
+  }
+  .Contact {
+    padding: 0.1rem 0.5rem;
+    gap: 0.4rem;
+    margin-top: 0.4rem;
+  }
+  .Contact h1 {
+    font-size: 0.6rem;
+  }
+}

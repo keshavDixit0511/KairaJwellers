@@ -1,0 +1,124 @@
+.franchies{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.owner{
+  width: 100%;
+  display: flex;
+  padding: 3rem;
+  display: flex;
+  gap: 6rem;
+}
+
+.franchiesdata{
+    width: 20rem;
+    object-fit: cover;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.419) 0px 0px 3px 1px;
+}
+
+/* .franchies .franchiesdata .img .selectImg{
+   padding-left: 2rem;
+} */
+
+.franchies .franchiesdata .text{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+}
+
+.franchies .franchiesdata h3{
+    font-size: 1.4rem;
+}
+
+.franchies .franchiesdata p{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.franchies .franchiesdata img{
+    width: 100px;
+    height: 100px;
+    max-height: 70rem;
+}
+
+
+
+.franchies .franchiesdata .customfileupload {
+  margin-top: 1.2rem;
+  margin-bottom: 1.3rem;
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  background-color: #000000ad;
+  color: white;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  border-radius: 2rem;
+  margin-left: 0.3rem;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.franchies .franchiesdata .customfileupload input{
+   display: none;
+}
+
+@media (max-width:1024px){
+    .franchies .franchiesdata{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .franchies .franchiesdata .text {
+    padding-left: 0;
+    display: flex;
+  }
+  .franchies .franchiesdata img {
+    height: auto; /* let image height adapt */
+    max-height: 20rem;
+  }
+  .franchies .franchiesdata .custom-file-upload {
+    width: auto;
+    margin-left: 0;
+  }
+
+   .owner { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* center content */
+    padding: 2rem 1rem;    /* reduce padding */
+    gap: 1.5rem;
+  }
+
+  .name h3{
+    margin: 0;
+  }
+
+}
+@media (max-width: 480px) {
+  .franchies .franchiesdata h3 {
+    font-size: 1.2rem;
+  }
+  .franchies .franchiesdata p {
+    font-size: 0.9rem;
+  }
+  .owner { 
+    align-items: center;
+    padding: 1rem;       /* tighter padding */
+    gap: 1rem;
+  }
+  .text {
+    display: flex;
+  }
+}

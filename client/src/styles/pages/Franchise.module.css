@@ -1,0 +1,594 @@
+.Franchise_Out {
+  width: 100%;
+  padding: 2rem 0 0;
+}
+
+.Franchise_Topwrapper {
+  margin-top: 2rem;
+  background: #ffecec;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.07);
+  padding: 2.5rem 1.5rem 2rem 1.5rem;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Top_heading {
+  padding: 1rem 0 0.5rem 0;
+  text-align: center;
+}
+
+.Main_head{
+  color: rgb(187, 79, 79);
+  text-align: center;
+  font-size: 2rem;
+}
+
+.Top_heading h2 {
+  position: relative;
+  display: inline-block;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #b8860b;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.goldUnderline {
+  display: block;
+  width: 80%;
+  height: 4px;
+  background: linear-gradient(90deg, #ffd700 0%, #fffbe6 100%);
+  border-radius: 2px;
+  margin: 0.5rem auto 0 auto;
+}
+
+.pointsWrapper {
+  padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.points {
+  margin-top: 0rem;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ball {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffd700 60%, #fffbe6 100%);
+  margin-right: 0.7em;
+  vertical-align: middle;
+  box-shadow: 0 1px 4px 0 rgba(184,134,11,0.15);
+}
+
+.rendered_Stuff {
+  position: relative;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px 0 rgba(184,134,11,0.08);
+  transition: box-shadow 0.2s, transform 0.2s;
+  border: 1px solid #f3e5c0;
+  cursor: pointer;
+  overflow: hidden;
+}
+.rendered_Stuff:hover {
+  box-shadow: 0 6px 24px 0 rgba(184,134,11,0.18);
+  transform: translateY(-4px) scale(1.02);
+}
+.rendered_Stuff div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  padding: 1.2rem 2.5rem;
+}
+.rendered_Stuff div h1 {
+  width: 60%;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #b8860b;
+  margin: 0;
+}
+.rendered_Stuff div p {
+  width: 50%;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #333;
+  margin: 0;
+  transition: color 0.2s, font-size 0.2s;
+}
+
+.Fra2_out {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Fra2_out h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.States_Wrapper {
+  width: 100%;
+  display: flex;
+  background: rgb(255, 244, 245);
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.States {
+  border-top: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(255, 255, 255);
+  display: flex;
+  width: max-content;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+  animation: marquee-tofro 5s ease-in-out infinite alternate;
+}
+.States h2 {
+  color: rgb(255, 179, 179);
+}
+@keyframes marquee-tofro {
+  0% {
+    transform: translateX(25%);
+  }
+  100% {
+    transform: translateX(-25%);
+  }
+}
+
+.growthContainer {
+  text-align: center;
+  padding: 2rem 3rem 2.5rem ;
+}
+
+.growthGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.growthCard {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.growthCard:hover {
+  transform: translateY(-6px);
+}
+
+.growthImg {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.growthCard h3 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.growthCard ul {
+  padding: 0;
+  list-style: disc;
+  text-align: left;
+  margin-left: 1rem;
+  color: #555;
+}
+
+.managementSection {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.managementTitle {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.managementGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.managementCard {
+  background-color: #fafafa;
+  padding: 1.5rem;
+  border-radius: 16px;
+  width: 260px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.managementCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.managementImg {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.managementCard h3 {
+  margin-bottom: 0.3rem;
+  color: #222;
+  font-weight: 600;
+}
+
+.role {
+  color: #777;
+  font-size: 0.95rem;
+}
+
+.tagline {
+  margin-top: 2rem;
+  font-weight: 600;
+  color: #333;
+  font-size: 1.1rem; 
+}
+
+.franchiseQuoteRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  padding: 1.2rem 1.5rem;
+  background: #fff6fa;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(180,138,156,0.08);
+  flex-wrap: wrap;
+}
+.franchiseQuote {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #b48a9c;
+}
+.franchiseQuoteBtn {
+  background: #b48a9c;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.7rem 2.2rem;
+  font-size: 1.08rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(180,138,156,0.13);
+}
+.franchiseQuoteBtn:hover {
+  background: #2d1515;
+  color: #fff;
+}
+@media (max-width: 600px) {
+  .franchiseQuoteRow {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    padding: 1rem 0.5rem;
+  }
+  .franchiseQuoteBtn {
+    width: 100%;
+    margin-top: 0.7rem;
+    padding: 0.7rem 0;
+    font-size: 1rem;
+  }
+}
+
+/* Responsive for <= 1024px */
+@media (max-width: 1024px) {
+  .Franchise_Topwrapper {
+    width: 95vw;
+    padding: 2rem 0.8rem 1.5rem 0.8rem;
+  }
+  .growthContainer {
+    padding: 1.5rem 1.2rem 2rem;
+  }
+  .growthGrid {
+    gap: 1rem;
+  }
+  .managementSection {
+    padding: 2rem 0.5rem;
+  }
+  .managementGrid {
+    gap: 1.2rem;
+  }
+}
+
+/* Responsive for <= 768px */
+@media (max-width: 768px) {
+  .Franchise_Topwrapper {
+    width: 99vw;
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+    border-radius: 1rem;
+  }
+  .Top_heading h2 {
+    font-size: 1.7rem;
+  }
+  .Main_head {
+    font-size: 1.3rem;
+  }
+  .goldUnderline {
+    width: 60%;
+    height: 3px;
+  }
+  .pointsWrapper {
+    padding: 1rem 0.2rem 0.2rem 0.2rem;
+  }
+  .rendered_Stuff div {
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1rem 1rem;
+  }
+  .rendered_Stuff div h1,
+  .rendered_Stuff div p {
+    width: 100%;
+    text-align: left;
+  }
+  .rendered_Stuff div h1 {
+    font-size: 1.1rem;
+  }
+  .rendered_Stuff div p {
+    font-size: 0.98rem;
+  }
+  .Fra2_out h1 {
+    font-size: 1.5rem;
+  }
+  .States {
+    gap: 1.2rem;
+  }
+  .growthContainer {
+    padding: 1rem 0.2rem 1.2rem;
+  }
+  .growthGrid {
+    gap: 0.7rem;
+    margin-top: 1rem;
+  }
+  .growthCard {
+    padding: 1rem;
+  }
+  .growthImg {
+    width: 44px;
+    height: 44px;
+  }
+  .growthCard h3 {
+    font-size: 1.1rem;
+  }
+  .managementSection {
+    padding: 1.2rem 0.2rem;
+  }
+  .managementTitle {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .managementGrid {
+    gap: 0.7rem;
+  }
+  .managementCard {
+    width: 90vw;
+    padding: 1rem;
+  }
+}
+
+/* Responsive for <= 490px */
+@media (max-width: 490px) {
+  .Franchise_Topwrapper {
+    width: 100vw;
+    padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+    border-radius: 0.7rem;
+  }
+  .Top_heading h2 {
+    font-size: 1.1rem;
+  }
+  .Main_head {
+    font-size: 1rem;
+  }
+  .goldUnderline {
+    width: 40%;
+    height: 2px;
+  }
+  .pointsWrapper {
+    padding: 0.5rem 0.1rem 0.1rem 0.1rem;
+  }
+  .points {
+    gap: 0.7rem;
+  }
+  .ball {
+    width: 8px;
+    height: 8px;
+    margin-right: 0.4em;
+  }
+  .rendered_Stuff {
+    border-radius: 0.5rem;
+  }
+  .rendered_Stuff div {
+    padding: 0.7rem 0.8rem;
+    gap: 0.7rem;
+  }
+  .rendered_Stuff div h1 {
+    font-size: 0.95rem;
+  }
+  .rendered_Stuff div p {
+    font-size: 0.85rem;
+  }
+  .Fra2_out h1 {
+    font-size: 1.1rem;
+  }
+  .States {
+    gap: 0.5rem;
+  }
+  .growthContainer {
+    padding: 0.5rem 0.1rem 0.7rem;
+  }
+  .growthGrid {
+    gap: 0.4rem;
+    margin-top: 0.5rem;
+  }
+  .growthCard {
+    padding: 0.7rem;
+    border-radius: 7px;
+  }
+  .growthImg {
+    width: 32px;
+    height: 32px;
+  }
+  .growthCard h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+  .growthCard ul {
+    margin-left: 0.5rem;
+    font-size: 0.92rem;
+  }
+  .managementSection {
+    padding: 0.7rem 0.1rem;
+  }
+  .managementTitle {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .managementGrid {
+    gap: 0.4rem;
+  }
+  .managementCard {
+    width: 98vw;
+    padding: 0.7rem;
+    border-radius: 7px;
+  }
+  .managementImg {
+    border-radius: 7px;
+  }
+  .managementCard h3 {
+    font-size: 0.95rem;
+  }
+  .role {
+    font-size: 0.85rem;
+  }
+  .tagline {
+    font-size: 0.95rem;
+    margin-top: 1rem;
+  }
+}
+
+/* Responsive for <= 390px */
+@media (max-width: 390px) {
+  .Franchise_Topwrapper {
+    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+    border-radius: 0.3rem;
+  }
+  .Top_heading h2 {
+    font-size: 0.9rem;
+  }
+  .Main_head {
+    font-size: 1rem;
+  }
+  .goldUnderline {
+    width: 30%;
+    height: 1.5px;
+  }
+  .pointsWrapper {
+    padding: 0.2rem 0.05rem 0.05rem 0.05rem;
+  }
+  .points {
+    gap: 0.3rem;
+  }
+  .ball {
+    width: 6px;
+    height: 6px;
+    margin-right: 0.2em;
+  }
+  .rendered_Stuff {
+    border-radius: 0.2rem;
+  }
+  .rendered_Stuff div {
+    padding: 0.3rem 0.5rem;
+    gap: 0.3rem;
+  }
+  .rendered_Stuff div h1 {
+    font-size: 0.7rem;
+  }
+  .rendered_Stuff div p {
+    font-size: 0.7rem;
+  }
+  .Fra2_out h1 {
+    font-size: 1rem;
+  }
+  .States {
+    gap: 1rem;
+  }
+  .growthContainer {
+    padding: 0.2rem 0.05rem 0.3rem;
+  }
+  .growthGrid {
+    gap: 0.2rem;
+    margin-top: 0.2rem;
+  }
+  .growthCard {
+    padding: 0.3rem;
+    border-radius: 3px;
+  }
+  .growthImg {
+    width: 18px;
+    height: 18px;
+  }
+  .growthCard h3 {
+    font-size: 0.7rem;
+    margin-bottom: 0.2rem;
+  }
+  .growthCard ul {
+    margin-left: 0.2rem;
+    font-size: 0.7rem;
+  }
+  .managementSection {
+    padding: 0.3rem 0.05rem;
+  }
+  .managementTitle {
+    font-size: 0.7rem;
+    margin-bottom: 0.2rem;
+  }
+  .managementGrid {
+    gap: 0.2rem;
+  }
+  .managementCard {
+    width: 99vw;
+    padding: 0.3rem;
+    border-radius: 3px;
+  }
+  .managementImg {
+    border-radius: 3px;
+  }
+  .managementCard h3 {
+    font-size: 0.7rem;
+  }
+  .role {
+    font-size: 0.7rem;
+  }
+  .tagline {
+    font-size: 0.7rem;
+    margin-top: 0.3rem;
+  }
+}

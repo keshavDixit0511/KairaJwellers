@@ -1,0 +1,243 @@
+.Hero_OuterBox {
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  display: flex;
+  /* background: #000; */
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+} 
+.balls {
+  width: 0;
+  height: 0;
+  border-radius: 200px;
+  box-shadow: 0 0 60px 40px rgba(255, 105, 180, 0.7),
+    0 0 120px 80px rgba(255, 105, 180, 0.5);
+  background: transparent;
+  filter: drop-shadow(0 0 60px hotpink);
+}
+.Hero_InnerBox {
+  padding: 1rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end; 
+  margin-top: -7rem;
+  z-index: 1;
+}
+
+.Hero_InnerBox h1 {
+  text-align: right;
+  font-size: 10rem;
+  line-height: 0.9;
+  letter-spacing: 0.1rem;
+  word-break: break-word;
+  font-weight: 500;
+  /* Animate a gradient background moving right to left */
+  background: linear-gradient(
+    120deg,
+    rgba(187, 79, 79, 0.8) 0%,
+    rgba(187, 79, 79, 0.8) 25%,
+    rgba(255, 198, 198, 0.9) 50%,
+    rgb(187, 79, 79) 75%,
+    rgb(187, 79, 79) 100%
+  );
+  background-size: 300% 100%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation: moveBg 6s linear infinite;
+}
+
+@keyframes moveBg {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0% 0;
+  }
+}
+
+.Hero_InnerBox p {
+  color: rgb(187, 79, 79);
+  text-align: right;
+  margin-top: -6rem;
+  font-size: 2rem;
+  text-wrap: inherit;
+  width: 60%;
+  max-width: 100%;
+}
+
+.Button_box {
+  margin-top: -3rem;
+  position: relative;
+  padding: 0;
+}
+
+.Button_Wrapper {
+  right: 40%;
+  position: absolute;
+  margin-right: 2rem;
+  border-radius: 50px;
+  padding: 0rem 2.5rem;
+  gap: 15px;
+  display: flex;
+  border: 2px solid rgb(187, 79, 79);
+  justify-content: space-between;
+  align-items: center;
+}
+.Button_Wrapper h1 {
+  color: rgb(187, 79, 79);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.arrow_Down {
+  width: 32px;
+  height: 32px;
+}
+@media (max-width: 1024px) {
+  .Hero_OuterBox {
+    height: 100vh;
+  }
+  .Hero_InnerBox {
+    margin-top: 15rem;
+    padding: 0rem 3rem;
+  }
+  .Hero_InnerBox h1 {
+    font-size: 8rem;
+    letter-spacing: 0.12rem;
+  }
+  .Hero_InnerBox p {
+    font-size: 1.8rem;
+    margin-top: -4rem;
+    width: 100%;
+  }
+  .Button_box {
+    margin-top: -1.2rem;
+  }
+  .Button_Wrapper {
+    right: 50%;
+    border-radius: 50px;
+    margin-right: 0.3rem;
+    padding: 0rem 2.5rem;
+    gap: 15px;
+  }
+  .Button_Wrapper h1 {
+    font-size: 1.8rem;
+  }
+  .arrow_Down {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .Hero_OuterBox {
+    height: 100vh;
+  }
+  .Hero_InnerBox {
+    margin-top: 2rem;
+    padding: 0rem 3rem;
+  }
+  .Hero_InnerBox h1 {
+    font-size: 8rem;
+    letter-spacing: 0.12rem;
+  }
+  .Hero_InnerBox p {
+    font-size: 1.8rem;
+    margin-top: -4rem;
+    width: 100%;
+  }
+  .Button_box {
+    margin-top: -1.2rem;
+  }
+  .Button_Wrapper {
+    right: 50%;
+    border-radius: 50px;
+    margin-right: 0.3rem;
+    padding: 0rem 2.5rem;
+    gap: 15px;
+  }
+  .Button_Wrapper h1 {
+    font-size: 1.8rem;
+  }
+  .arrow_Down {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 486px) {
+  .Hero_OuterBox {
+    height: auto;
+    min-height: 80vh;
+  }
+  .Hero_InnerBox {
+    padding: 0.7rem;
+    margin-top: 15rem;
+    align-items: flex-end;
+  }
+  .Hero_InnerBox h1 {
+    font-size: 4.5rem;
+    letter-spacing: 0.05rem;
+  }
+  .Hero_InnerBox p {
+    font-size: 1rem;
+    margin-top: -3rem;
+    width: 100%;
+  }
+  .Button_box {
+    margin-top: -0.7rem;
+  }
+  .arrow_Down {
+    width: 25px;
+    height: 20px;
+  }
+  .Button_Wrapper {
+    right: 50%;
+    margin-right: 0;
+    padding: 0.13rem 1.6rem;
+    gap: 5px;
+  }
+  .Button_Wrapper h1 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .Hero_OuterBox {
+    height: 100vh;
+  }
+  .Hero_InnerBox {
+    padding: 0.7rem;
+    margin-top: 4rem;
+    align-items: flex-end;
+  }
+  .Hero_InnerBox h1 {
+    font-size: 4.2rem;
+    letter-spacing: 0.05rem;
+  }
+  .Hero_InnerBox p {
+    font-size: 1rem;
+    margin-top: -3rem;
+    width: 100%;
+  }
+  .Button_box {
+    margin-top: -0.7rem;
+  }
+  .arrow_Down {
+    width: 25px;
+    height: 20px;
+  }
+  .Button_Wrapper {
+    right: 50%;
+    margin-right: 0;
+    padding: 0rem 1.5rem;
+    gap: 5px;
+  }
+  .Button_Wrapper h1 {
+    font-size: 0.9rem;
+  }
+}

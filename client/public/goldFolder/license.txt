@@ -1,0 +1,11 @@
+Model Information:
+* title:	Gold Ring with diamond
+* source:	https://sketchfab.com/3d-models/gold-ring-with-diamond-e53f2fd986bd4a21b9a747b6defe198f
+* author:	lucaviani (https://sketchfab.com/lucaviani)
+
+Model License:
+* license type:	CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions can not be distributed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Gold Ring with diamond" (https://sketchfab.com/3d-models/gold-ring-with-diamond-e53f2fd986bd4a21b9a747b6defe198f) by lucaviani (https://sketchfab.com/lucaviani) licensed under CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)

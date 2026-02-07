@@ -1,0 +1,380 @@
+/* General Section Styling */
+.store-section {
+  padding: 3.5rem 0.5rem 4rem 0.5rem;
+  background: linear-gradient(120deg, #fff 70%, #ffe4f2 100%);
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  min-height: 100vh;
+  position: relative;
+  margin: 2rem 0 0;
+  z-index: 0;
+}
+.store-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('https://www.transparenttextures.com/patterns/diamond-upholstery.png');
+  opacity: 0.07;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Header */
+.store-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.store-main-title {
+  font-size: 2.4rem;
+  color: #111;
+  font-weight: 800;
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.5px;
+  /* No text-shadow, keep it clean */
+}
+
+.store-subtitle {
+  color: #666;
+  font-size: 1.13rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.2px;
+}
+
+/* Registered Office Card - Standalone */
+.registered-office-card {
+  background: linear-gradient(120deg, #fff 80%, #ffe4f2 100%);
+  border-radius: 1.2rem;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+  box-shadow: 0 4px 24px rgba(200, 161, 53, 0.10), 0 1px 2px rgba(0,0,0,0.03);
+  max-width: 650px;
+  margin: 0 auto 2.8rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 2.5px solid #ffe4f2;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.registered-office-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  letter-spacing: 0.2px;
+}
+
+.registered-office-address {
+  color: #222;
+  margin-bottom: 0.7rem;
+  font-size: 1.08rem;
+  line-height: 1.55;
+  font-weight: 500;
+}
+
+.registered-office-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.18rem;
+  margin-bottom: 0.3rem;
+}
+
+.registered-office-phone {
+  color: #b10054;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.05rem;
+  transition: color 0.16s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2em;
+  background: #fff6fa;
+  padding: 0.18em 0.7em;
+  border-radius: 0.7em;
+}
+
+.registered-office-phone:hover {
+  color: #c8a135;
+  background: #ffe4f2;
+  text-decoration: underline;
+}
+
+/* Store Grid for the 3 Stores */
+.store-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 900px) {
+  .store-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+/* 1024px breakpoint */
+@media (max-width: 1024px) {
+  .store-section {
+    padding: 2.5rem 0.7rem 3rem 0.7rem;
+  }
+  .store-main-title {
+    font-size: 2rem;
+  }
+  .store-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.7rem;
+    max-width: 900px;
+  }
+  .registered-office-card {
+    max-width: 90vw;
+    padding: 1.2rem 1rem 1.2rem 1rem;
+  }
+  .store-card {
+    padding: 1rem 0.7rem 1.1rem 0.7rem;
+  }
+  .store-image, .store-map {
+    height: 140px;
+  }
+}
+
+/* 768px breakpoint */
+@media (max-width: 768px) {
+  .store-section {
+    padding: 1.5rem 5rem 2rem ;
+  }
+  .store-main-title {
+    font-size: 1.5rem;
+  }
+  .store-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    max-width: 98vw;
+  }
+  .registered-office-card {
+    max-width: 98vw;
+    padding: 0.9rem 0.5rem 1rem 0.5rem;
+  }
+  .store-card {
+    padding: 0.8rem 0.4rem 1rem 0.4rem;
+  }
+  .store-image, .store-map {
+    height: 110px;
+  }
+  .store-title, .registered-office-title {
+    font-size: 1rem;
+  }
+}
+
+/* 490px breakpoint */
+@media (max-width: 490px) {
+  .store-section {
+    padding: 1.1rem 0.5rem 1.5rem ;
+  }
+  .store-main-title {
+    font-size: 1.1rem;
+  }
+  .registered-office-card,
+  .store-card {
+    padding: 0.5rem 0.1rem 0.7rem 0.1rem;
+  }
+  .store-image, .store-map {
+    height: 90px;
+  }
+  .store-title {
+    font-size: 0.92rem;
+  }
+  .registered-office-title{
+    font-size: 1.2rem;
+  }
+  .store-map {
+    height: 120px;
+  }
+}
+
+/* 390px breakpoint */
+@media (max-width: 390px) {
+  .store-section {
+    padding: 0.7rem 0.5rem 1rem ;
+  }
+  .store-main-title {
+    font-size: 1.4rem;
+  }
+  .store-subtitle{
+    font-size: 0.8rem;
+  }
+  
+  .registered-office-card,
+  .store-card {
+    padding: 0.3rem 0.05rem 0.5rem 0.05rem;
+  }
+  .store-image, .store-map {
+    height: 60px;
+  }
+  .store-title  {
+    font-size: 0.8rem;
+  }
+  .registered-office-title{
+    font-size: 1.1rem;
+  }
+  .store-map {
+    height: 80px;
+  }
+}
+
+/* Store Card Styling */
+.store-card {
+  background: linear-gradient(120deg, #fff 80%, #ffe4f2 100%);
+  border-radius: 1rem;
+  padding: 1.3rem 1rem 1.5rem 1rem;
+  box-shadow: 0 4px 18px rgba(200, 161, 53, 0.08), 0 1px 2px rgba(0,0,0,0.03);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-width: 0;
+  min-height: 0;
+  border: 1.5px solid #ffe4f2;
+  transition: box-shadow 0.18s, transform 0.18s, border-color 0.18s;
+  position: relative;
+  overflow: hidden;
+}
+
+.store-card:hover {
+  box-shadow: 0 8px 28px rgba(200, 161, 53, 0.13), 0 2px 8px rgba(0,0,0,0.06);
+  transform: translateY(-3px) scale(1.015);
+  border-color: #c8a135;
+}
+
+.store-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0.9rem;
+  box-shadow: 0 2px 12px rgba(200,161,53,0.07);
+  border: 1.5px solid #ffe4f2;
+  background: #fff;
+  margin-bottom: 1.1rem;
+  transition: box-shadow 0.18s, border-color 0.18s;
+}
+
+.store-card:hover .store-image {
+  box-shadow: 0 6px 18px rgba(200,161,53,0.13);
+  border-color: #c8a135;
+}
+
+.store-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1 1 auto;
+}
+
+.store-title {
+  font-size: 1.22rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.2px;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.store-address {
+  color: #222;
+  margin-bottom: 0.7rem;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-weight: 500;
+}
+
+.store-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.18rem;
+  margin-bottom: 0.3rem;
+}
+
+.store-phone {
+  color: #b10054;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.01rem;
+  transition: color 0.16s, background 0.16s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2em;
+  background: #fff6fa;
+  padding: 0.18em 0.7em;
+  border-radius: 0.7em;
+}
+
+.store-phone:hover {
+  color: #c8a135;
+  background: #ffe4f2;
+  text-decoration: underline;
+}
+
+/* Enlarged Map Styling */
+.store-map {
+  width: 100%;
+  height: 320px;
+  border: 1.5px solid #ffe4f2;
+  border-radius: 0.9rem;
+  margin-top: 0.7rem;
+  box-shadow: 0 1px 8px rgba(200,161,53,0.07);
+  background: #fff;
+  transition: box-shadow 0.15s, border-color 0.15s;
+}
+
+.store-map:hover {
+  box-shadow: 0 4px 18px rgba(200,161,53,0.11);
+  border-color: #c8a135;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+  .store-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* Map Pin Overlay for Store Locations (for custom map with pins, if implemented) */
+.map-pin {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background: #b10054;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 8px rgba(200,161,53,0.10);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -100%);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.1rem;
+  pointer-events: none;
+}
+
+/* Optional: If you want to highlight the active store pin */
+.map-pin.active {
+  background: #c8a135;
+  color: #fff;
+  border-color: #b10054;
+}

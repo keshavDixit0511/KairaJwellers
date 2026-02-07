@@ -1,0 +1,80 @@
+.carouselContainer {
+  /* background: #000; */
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  overflow: hidden;
+  z-index: 0;
+ 
+}
+
+.carouselImage {
+  width: 100vw;
+  height: 100%;
+  max-width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  object-position: center center;
+} 
+
+.leftArrow,
+.rightArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 2rem;
+  color: #222;
+  cursor: pointer;
+  z-index: 2;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leftArrow svg, .rightArrow svg{
+  width: 24px;
+  height: 24px;
+}
+.leftArrow:hover,
+.rightArrow:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.leftArrow {
+  left: 32px;
+}
+
+.rightArrow {
+  right: 32px;
+}
+
+@media (max-width: 480px) {
+  .carouselContainer {
+    height: 50vh;
+    min-height: 140px;
+  }
+  .carouselImage {
+    width: 100vw;
+    height: 40vh;
+  }
+  .leftArrow,
+  .rightArrow {
+    width: 26px;
+    height: 26px;
+    font-size: 1rem;
+  }
+  .leftArrow {
+    left: 10px;
+  }
+  .rightArrow {
+    right: 10px;
+  }
+}

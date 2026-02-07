@@ -1,0 +1,298 @@
+.outer_StoreBox {
+  width: 100%;
+  position: relative;
+}
+
+.top_StoreCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.top_Inside {
+  text-align: center;
+  position: relative;
+}
+.bar {
+  height: 5px;
+  background: rgba(185, 158, 158, 1);
+  position: absolute;
+  top: 50%;
+} 
+
+.left {
+  width: 30%;
+  left: 5%;
+  top: 50%;
+}
+
+.right {
+  width: 30%;
+  right: 5%;
+  top: 50%;
+}
+.top_Inside h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.verticalBar {
+  position: absolute;
+  display: none;
+  left: 50%;
+  width: 20%;
+  top: 50%;
+  transform: translateX(-50%) rotate(90deg);
+}
+
+.top_Inside h2 {
+  font-size: 1rem;
+  margin-top: -2.8rem;
+  letter-spacing: 1px;
+  color: rgba(136, 134, 134, 1);
+}
+
+.address_Box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4rem;
+  margin-top: 2rem;
+  gap: 20%;
+}
+
+.add_Cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  background: rgb(255, 255, 255);
+  width: 30vw;
+  height: 30vh;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.15);
+    
+}
+@media (max-width: 1300px) {
+  .outer_StoreBox {
+    padding-bottom: 2rem;
+  }
+  .top_Inside h1 {
+    font-size: 2rem;
+  }
+  .top_Inside h2 {
+    font-size: 0.95rem;
+    margin-top: -2rem;
+  }
+  .address_Box {
+    gap: 2rem;
+    padding: 2rem 1rem;
+    margin-top: 1.5rem;
+  }
+  .add_Cont {
+    width: 80vw;
+    height: 30vh;
+    min-height: 160px;
+  }
+  .left,
+  .right {
+    width: 40%;
+    left: unset;
+    right: unset;
+  }
+  .left {
+    left: 2%;
+  }
+  .right {
+    right: 2%;
+  }
+  .verticalBar {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .outer_StoreBox {
+    padding-bottom: 2rem;
+  }
+  .top_Inside h1 {
+    font-size: 2rem;
+  }
+  .top_Inside h2 {
+    font-size: 0.95rem;
+    margin-top: -2rem;
+  }
+  .address_Box {
+    gap: 2rem;
+    padding: 2rem 1rem;
+    margin-top: 1.5rem;
+  }
+  .add_Cont {
+    width: 80vw;
+    height: 30vh;
+    min-height: 160px;
+  }
+  .left,
+  .right {
+    width: 40%;
+    left: unset;
+    right: unset;
+  }
+  .left {
+    left: 2%;
+  }
+  .right {
+    right: 2%;
+  }
+  .verticalBar {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .outer_StoreBox {
+    padding-bottom: 2rem;
+  }
+  .top_Inside h1 {
+    font-size: 2rem;
+  }
+  .top_Inside h2 {
+    font-size: 0.95rem;
+    margin-top: -2rem;
+  }
+  .address_Box {
+    gap: 2rem;
+    padding: 2rem 1rem;
+    margin-top: 1.5rem;
+  }
+  .add_Cont {
+    width: 80vw;
+    height: 30vh;
+    min-height: 160px;
+  }
+  .left,
+  .right {
+    width: 40%;
+    left: unset;
+    right: unset;
+  }
+  .left {
+    left: 2%;
+  }
+  .right {
+    right: 2%;
+  }
+  .verticalBar {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .outer_StoreBox {
+    height: auto;
+    min-height: 50vh;
+    padding-bottom: 1rem;
+  }
+  .top_StoreCont {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .top_Inside h1 {
+    font-size: 1.2rem;
+  }
+  .top_Inside h2 {
+    font-size: 0.8rem;
+    margin-top: -1rem;
+  }
+  .bar {
+    height: 3px;
+  }
+  .left,
+  .right {
+    width: 30%;
+    top: 30%;
+  }
+  .left {
+    left: 5%;
+  }
+  .right {
+    right: 5%;
+  }
+  .verticalBar {
+    display: none;
+  }
+  .address_Box {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 5;
+    margin-top: 1rem;
+  }
+  .add_Cont {
+    width: 80vw;
+    min-width: 0;
+    height: 20vh;
+    padding: 0.7rem;
+  }
+  .add_Cont h1 {
+    font-size: 1rem;
+  }
+
+  .add_Cont p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .outer_StoreBox {
+    height: auto;
+    min-height: 50vh;
+    padding-bottom: 1rem;
+    margin-top: 0rem;
+  }
+  .top_StoreCont {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .top_Inside h1 {
+    font-size: 0.9rem;
+  }
+  .top_Inside h2 {
+    font-size: 0.8rem;
+    margin-top: -1rem;
+  }
+  .bar {
+    height: 3px;
+  }
+  .left,
+  .right {
+    width: 30%;
+    top: 30%;
+  }
+  .left {
+    left: 5%;
+  }
+  .right {
+    right: 5%;
+  }
+  .verticalBar {
+    display: none;
+  }
+  .address_Box {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 5;
+    margin-top: 1rem;
+  }
+  .add_Cont {
+    width: 80vw;
+    min-width: 0;
+    height: 20vh;
+    padding: 0.7rem;
+  }
+  .add_Cont h1 {
+    font-size: 1rem;
+  }
+
+  .add_Cont p {
+    font-size: 0.8rem;
+  }
+}

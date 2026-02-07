@@ -1,0 +1,449 @@
+
+
+/* ===== Global Text Styling ===== */
+.adminPage,
+.adminPage .landingPage,
+.adminPage .landingPage,
+.adminPage .landingPage .main_categories {
+    color: #3A2E2E; /* Primary text color */
+}
+
+/* Paragraphs and secondary text */
+.adminPage .landingPage p,
+.adminPage .landingPage .main_categories .categori p {
+    color: #7B6F6F; /* softer for less emphasis */
+}
+
+/* Headings inside categories or sections */
+.adminPage .landingPage .main_categories .categori h3 {
+    color: #3A2E2E;
+    font-weight: 600;
+}
+
+
+/* File upload button text */
+.custom-file-upload {
+    background-color: #645555;
+    color: #FFFFFF;
+    
+}
+.custom-file-upload:hover {
+    background-color: #523E3E;
+}
+
+
+/* ===== Base Layout ===== */
+.adminPage {
+    width: 100%;
+    background-color: #F8F7F4;
+    min-height: 100vh;
+    padding-bottom: 2rem;
+}
+
+.landingPage {
+    padding-left: 6rem;
+    padding-right: 2rem;
+}
+
+.quote{
+    margin-bottom: 1rem;
+}
+
+.quote label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.quote p{
+    font-weight: 200;
+}
+
+.quote input {
+    border-radius: 8px;
+    outline: none;
+    padding: 5px;
+    border: 1px solid grey;
+}
+
+.quote button {
+    border-radius: 8px;
+    outline: none;
+    padding: 5px;
+    border: 1px solid grey;
+    margin: 0 12px;
+    background-color: #eee;
+}
+
+.about label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.about p {
+    font-weight: 200;
+}
+
+.about textarea {
+    border-radius: 8px;
+    outline: none;
+    padding: 5px;
+    border: 1px solid grey;
+}
+
+.about button {
+    border-radius: 8px;
+    outline: none;
+    padding: 5px;
+    border: 1px solid grey;
+    margin: 0 12px;
+    background-color: #eee;
+}
+
+.number input {
+    border-radius: 8px;
+    outline: none;
+    padding: 5px;
+    border: 1px solid grey;
+}
+
+.number button {
+    border-radius: 8px;
+    outline: none;
+    padding: 5px;
+    border: 1px solid grey;
+    margin: 0 12px;
+    background-color: #eee;
+}
+
+
+/* ===== Form Section ===== */
+.adminPage .landingPage {
+    width: 100%;
+    margin-top: 1.2rem;
+}
+
+.adminPage .landingPage{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(1.3rem, 2.6vw, 2rem); 
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;
+}
+
+.adminPage .landingPage label {
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+    color: #5c4040;
+    font-weight: 600;
+}
+
+.adminPage .landingPage p {
+    margin-bottom: 0.5rem;
+    margin-top: 0.8rem;
+    font-weight: 500;
+    color: #a37f7f;
+    font-size: clamp(0.9rem, 2vw, 1.2rem); 
+}
+
+.adminPage .landingPage h3 {
+    margin-bottom: 0.5rem;
+    margin-top: 0.8rem;
+    font-weight: 500;
+    color: #474444;
+    font-size: clamp(1.5rem, 2vw, 2rem); 
+}
+
+.adminPage .landingPage input,
+.adminPage .landingPage textarea,
+.adminPage .landingPage select {
+    margin-bottom: 0.7rem;
+    padding: 0.8rem 0.5rem;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    transition: border-color 0.3s ease;
+}
+
+.adminPage .landingPage input:focus,
+.adminPage .landingPage textarea:focus,
+.adminPage .landingPage select:focus {
+    outline: none;
+    border-bottom-color: #645555;
+}
+
+.adminPage .landingPage textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.adminPage .landingPage button {
+    color: #F0EBE3;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    border-radius: 0.4rem;
+    padding: 0.6rem 1rem;
+    background-color: #645555;
+    border: none;
+    width: fit-content;
+    box-shadow: #FFEFEF 0px 3px 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 2rem;
+}
+
+.adminPage .landingPage button:hover {
+    background-color: #523e3e;
+    transform: scale(1.05);
+    
+}
+
+.landingPage .camera-fullscreen{
+    width: 100%;
+    position: relative;
+}
+
+.clickedImageActions{
+    display: flex;
+    justify-content: space-between;
+}
+
+.landingPage .camera-fullscreen .stopCamera{
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 1rem;
+   margin-top: 0.3rem;
+   /* background-color: transparent; */
+
+}
+
+
+.adminPage .landingPage .camera-fullscreen .camera-controls{
+    background-color: red;
+    width: 100%;
+}
+
+.adminPage .landingPage .camera-fullscreen .camera-controls .click {
+    padding: 1.3rem;
+    background-color: rgba(255, 255, 255, 0.875);
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+    width: 10%;
+    height: 10%;
+    box-shadow: rgb(61, 56, 56) 0px 3px 8px   ;
+    border-radius: 50%;
+    
+}
+/* ===== Number Inputs Side-by-Side ===== */
+.adminPage .landingPage .number {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.2rem;
+}
+
+.landingPage .about{
+    margin-bottom: 3rem;
+}
+
+.landingPage  .custom-file-upload{
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+
+
+.adminPage .landingPage .number input {
+    flex: 1;;
+}
+
+/* ===== Banner Section ===== */
+.adminPage .landingPage .main_banner {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.landingPage h1{
+    font-size: 2rem;
+}
+
+.adminPage .landingPage .banner {
+    flex: 1 1 calc(20% - 2rem); /* exactly 5 per row with gap included */
+    max-width: calc(20% - 2rem);
+}
+
+.adminPage .landingPage .banner img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.9rem;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 8px;
+}
+.adminPage .landingPage .banner .custom-file-upload{
+    color: white;
+    font-weight: 300;
+}
+
+/* ===== Categories Section ===== */
+.adminPage .landingPage .main_categories {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.adminPage .landingPage .main_categories .categori {
+    flex: 1 1 calc(20% - 2rem);
+    max-width: calc(20% - 2rem);
+    margin-bottom: 2rem;
+    background-color: #fff;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;
+    transition: transform 0.3s ease;
+}
+
+.adminPage .landingPage .main_categories .categori:hover {
+    transform: translateY(-5px);
+}
+
+.adminPage .landingPage .main_categories .categori p {
+    font-size: clamp(0.9rem, 3vw, 1.7rem); 
+    padding: 0.7rem;
+    font-weight: 500;
+}
+
+
+.adminPage .landingPage .main_categories .categori .orignal_categori img {
+    width: 100%;
+    object-fit: cover;
+    padding: 0.8rem 0.3rem;
+}
+
+.adminPage .landingPage .main_categories .categori .edited_categori {
+    padding: 1rem;
+}
+
+.adminPage .landingPage .main_categories .categori .edited_categori h3,
+.adminPage .landingPage .main_categories .categori .edited_categori input {
+    font-size: 0.6rem;
+    margin-bottom: 0.3rem;
+}
+
+.adminPage .landingPage .main_categories .categori .edited_categori  .custom-file-upload{
+    color: white;
+}
+
+/* ===== File Upload Button (Same Style as Main Button) ===== */
+.custom-file-upload input[type="file"] {
+    display: none;
+    color: white;;
+}
+
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 0.3rem 0.5rem;
+    cursor: pointer;
+    background-color: #645555;
+    color: white;
+    border-radius: 0.4rem;
+    font-size: 0.4rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    box-shadow: #FFEFEF 0px 3px 8px;
+}
+
+.main_banner .banner.custom-file-upload{
+    color: white;
+}   
+
+
+.custom-file-upload:hover {
+    background-color: #523e3e;
+}
+
+@media (max-width: 1200px) {
+  .adminPage .landingPage .main_categories .categori {
+    flex: 1 1 calc(33.333% - 1rem);
+    max-width: calc(33.333% - 1rem);
+  }
+}
+
+
+@media (max-width: 1020px) {
+    .landingPage {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .adminPage .landingPage button {
+        width: 50%;
+    }
+
+    .adminPage .landingPage .banner {
+        flex: 2 1 calc(100% - 1rem);
+        max-width: calc(50% - 1rem);
+    }
+
+    .adminPage .landingPage .main_categories .categori {
+        flex: 1 1 calc(45% - 1rem);
+        max-width: calc(45% - 1rem);
+    }
+}
+
+@media (max-width: 600px) {
+    .adminPage {
+        padding: 0.5rem;
+    }
+
+    .landingPage {
+        padding-left: 3rem;
+        padding-right: 0.5rem;
+        flex-wrap: wrap;
+        width: 70%;
+    }
+
+    .adminPage .landingPage {
+        font-size: clamp(2rem, 4vw, 4rem);
+        padding: 1rem;
+    }
+
+    .landingPage .quote label{
+        margin-bottom: 2rem;
+    }
+
+    .adminPage .landingPage button {
+        width: 100%;
+    }
+
+    .adminPage .landingPage .number {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .adminPage .landingPage .banner {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .adminPage .landingPage .main_categories {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .adminPage .landingPage .main_categories .categori {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}

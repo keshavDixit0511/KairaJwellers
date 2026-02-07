@@ -1,0 +1,15 @@
+.Model_Container {
+  position: relative;
+  width: 100%;
+  transition: transform 0.5s;
+}
+.Animation_box {
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+
+ 

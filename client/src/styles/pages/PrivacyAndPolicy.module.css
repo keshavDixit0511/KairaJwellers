@@ -1,0 +1,105 @@
+.termAndConditionCOntainer {
+  width: 100%;
+  padding: 4rem;
+}
+
+.termsinnerContainer {
+  box-shadow: rgba(0, 0, 0, 0.266) 1px 1px 4px 3px;
+  border-radius: 8px;
+  padding: 2rem;
+  background: #fff;
+}
+
+.conditionSection {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.conditionSection h1 {
+  font-size: 1.9rem;
+  font-weight: 500;
+  color: rgba(107, 78, 85, 0.851);
+}
+
+.text {
+  padding: 0.9rem;
+}
+
+.text ul {
+  text-align: start;
+  padding-left: 1.2rem;
+}
+
+.text p {
+  text-align: start;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* 📱 Mobile devices (up to 600px) */
+@media (max-width: 600px) {
+  .termAndConditionCOntainer {
+    padding: 1rem;
+  }
+
+  .termsinnerContainer {
+    padding: 1rem;
+  }
+
+  .conditionSection h1 {
+    font-size: 1.4rem;
+  }
+
+  .text {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .text ul {
+    font-size: 0.9rem;
+    padding-left: 1rem;
+  }
+
+  .text p {
+    font-size: 0.9rem;
+  }
+}
+
+/* 📲 Tablets (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .termAndConditionCOntainer {
+    padding: 2rem;
+  }
+
+  .termsinnerContainer {
+    padding: 1.5rem;
+  }
+
+  .conditionSection h1 {
+    font-size: 1.6rem;
+  }
+
+  .text {
+    padding: 0.7rem;
+    font-size: 1rem;
+  }
+}
+
+/* 💻 Large screens (above 1200px) */
+@media (min-width: 1200px) {
+  .termAndConditionCOntainer {
+    padding: 5rem 8rem;
+  }
+
+  .termsinnerContainer {
+    padding: 3rem;
+  }
+
+  .conditionSection h1 {
+    font-size: 2.2rem;
+  }
+
+  .text {
+    font-size: 1.1rem;
+  }
+}

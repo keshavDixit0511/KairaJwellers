@@ -1,0 +1,124 @@
+.trackingUserContainer {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+/* Scrollable buttons row */
+.trackingUserContainer .scrolDateButtons {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px 92px;
+    white-space: nowrap;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #ccc transparent;
+}
+
+/* For WebKit browsers */
+.trackingUserContainer .scrolDateButtons::-webkit-scrollbar {
+    height: 6px;
+}
+.trackingUserContainer .scrolDateButtons::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 3px;
+}
+.trackingUserContainer .scrolDateButtons::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.trackingUserContainer .scrolDateButtons button {
+    margin-right: 10px;
+    flex: 0 0 auto; 
+    background: #eee;
+    color: #000;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    font-size: 0.9rem;
+}
+
+.trackingUserContainer .scrolDateButtons button:hover {
+    background: #ddd;
+}
+
+/* Chart container */
+.trackingUserContainer .scrollableChartContainer {
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+
+
+
+.scrollableChartContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;  /* allow horizontal scroll if needed */
+  padding: 1rem;
+}
+
+.lineChart {
+  max-width: 900px;
+  width: 100%; /* responsive width */
+}
+
+
+
+
+
+/* ============ Responsive Breakpoints ============ */
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+    .trackingUserContainer .scrolDateButtons {
+        padding: 15px 40px;
+    }
+
+    .trackingUserContainer .scrolDateButtons button {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+
+    .trackingUserContainer .scrollableChartContainer {
+        padding: 1.5rem;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 600px) {
+    .trackingUserContainer .scrolDateButtons {
+        padding: 10px 20px;
+        gap: 5px;
+    }
+
+    .trackingUserContainer .scrolDateButtons button {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+        margin-right: 5px;
+    }
+
+    .trackingUserContainer .scrollableChartContainer {
+        padding: 1rem;
+    
+    }
+
+    .scrollableChartContainer{
+        width: 20%;
+    }
+
+    @media (max-width: 600px) {
+  .lineChart {
+    max-width: 100%;  /* take full width of screen */
+    min-width: 400px; /* optional: prevent chart from becoming too small */
+  }
+}
+
+
+}

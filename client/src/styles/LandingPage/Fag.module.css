@@ -1,0 +1,98 @@
+.fagContainer {
+    width: 100%;
+}
+
+.innnerfag h1 {
+   color: rgba(56, 9, 9, 0.779);
+}
+
+.fagsection {
+    border-bottom: 2px solid black; 
+    padding: 0.6rem 1rem;
+    border-radius: 0.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.fagsection:hover {
+   background-color: rgba(250, 198, 198, 0.275);     
+}
+
+.fagsection p {
+    font-size: clamp(0.7rem, 2vw , 1rem);
+    font-weight: 400;
+    color: rgba(56, 9, 9, 0.47);
+    line-height: 1.5;
+}
+
+.innnerfag { 
+    border-radius: 0.3rem;
+    margin: 3rem auto;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.266) 1px 1px 4px 3px;
+    max-width: 900px; /* keeps FAQ centered on large screens */
+}
+
+.heading {
+    text-align: center;
+    font-size: clamp(1.2rem, 4vw , 2.5rem);
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 2rem;
+}
+
+.fagsection h2 {
+    font-size: clamp(1rem, 2.5vw , 1.4rem);
+    font-weight: 500;
+    color: rgba(56, 9, 9, 0.756);
+    margin-bottom: 0.5rem;
+}
+
+.active {
+  background-color: rgba(237, 173, 173, 0.129);
+}
+
+.inactive {
+  background-color: rgba(247, 236, 236, 0);
+}
+
+/* 🌍 Responsive Breakpoints */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .innnerfag {
+    margin: 2rem;
+    padding: 1.5rem;
+  }
+
+  .fagsection {
+    padding: 0.6rem;
+  }
+
+  .heading {
+    font-size: clamp(1.1rem, 5vw, 2rem);
+  }
+}
+
+/* Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+  .innnerfag {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .fagsection {
+    padding: 0.5rem;
+  }
+
+  .heading {
+    font-size: 1.3rem;
+  }
+
+  .fagsection h2 {
+    font-size: 1rem;
+  }
+
+  .fagsection p {
+    font-size: 0.85rem;
+  }
+}
