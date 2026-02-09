@@ -76,7 +76,8 @@ const Collections = () => {
       <div ref={videoRef} className={style.video_Cont}>
         <video
           className={style.iframe_vid}
-          src={page1?.video}
+          // src={page1?.video}
+          src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
           autoPlay
           muted
           loop

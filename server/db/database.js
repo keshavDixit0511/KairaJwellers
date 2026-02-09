@@ -6,9 +6,7 @@ const mongoose = require("mongoose");
 
 const connectDB = async () => {
   const uri = process.env.MONGODB_URI;
-  
-  // Debug: This should now show your connection string
-  console.log("Attempting to connect to MongoDB with URI:", uri);
+  console.log("🔗 Attempting to connect to MongoDB with URI");
 
   if (!uri) {
     console.error("❌ Error: MONGODB_URI is undefined.");

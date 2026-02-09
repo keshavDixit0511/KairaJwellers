@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Jewellery = require('../model/landingPage')
+const Jewellery = require('../model/landingPage.model')
 
 router.put("/page3/gallery/:section/:index", async (req, res) => {
   try {
