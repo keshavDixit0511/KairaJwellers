@@ -33,7 +33,6 @@ const Home = () => {
     };
     fetchData();
   }, [setPage1])
-  console.log(page1?.about?.LargeText)
 
   // Handler for the Qote
   const updateQuote = async () => { // async function to update the quote in the database
