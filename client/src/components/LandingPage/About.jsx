@@ -31,18 +31,7 @@ const About = () => {
   const paragraphRef = useRef(null);
   const countingRef = useRef(null);
 
-  const{page1, setPage1} = useContext(ContactCon);
-  useEffect(() => {
-  setPage1({
-    about: {
-      LargeText: "At KS Kaira Jewellers Pvt. Ltd., jewellery is not only an adornment but an expression of identity, elegance, and cultural legacy. Based in Palam Vihar, Gurgaon, we have earned a trusted name in the jewellery industry through our unwavering commitment to quality, craftsmanship, and customer satisfaction. Our journey began with a vision to seamlessly blend traditional artistry with modern aesthetics, crafting timeless pieces that speak to both heritage and individuality.",
-      numberData: [
-        { num: "500", name: "Happy Customers" },
-        { num: "5", name: "Branches" },
-      ],
-    },
-  });
-}, []);
+  const{page1} = useContext(ContactCon);
 
  console.log(page1?.about?.LargeText)
   useEffect(() => {

@@ -46,7 +46,8 @@ const TestimonialCard = ({ name, img, text }) => {
               ))}
             </div>
           </div>
-          <h2>{text.slice(0,40)}</h2>
+          {/* <h2>{text.slice(0,100)}</h2> */}
+          <h2>{text.slice(0, 100)}</h2>
         </div>
       </div>
     </div>

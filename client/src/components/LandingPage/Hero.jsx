@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useContext, useState } from 'react';
+import React, { useRef, useEffect, useContext} from 'react';
 import style from "../../styles/LandingPage/Hero.module.css";
 import gsap from 'gsap';
 import { ContactCon } from '../../Context/ContactContext';
@@ -30,7 +30,7 @@ const Hero = () => {
             Jewellers
           </h1>
           <p>
-           {page1.quote}
+           {page1?.quote}
           </p> 
         </div>
 

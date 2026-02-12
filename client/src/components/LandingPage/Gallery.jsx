@@ -11,6 +11,7 @@ const Collections = () => {
   const videoRef = useRef(null);
   const{page1} = useContext(ContactCon)
   // console.log(page1?.video) // set here your  video ---------------------------------------- 
+  console.log(page1?.video)
   useEffect(() => {
     if (!videoRef.current || !outerRef.current) return;
  
@@ -76,8 +77,8 @@ const Collections = () => {
       <div ref={videoRef} className={style.video_Cont}>
         <video
           className={style.iframe_vid}
-          // src={page1?.video}
-          src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+          src={page1?.video}
+          // src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
           autoPlay
           muted
           loop
