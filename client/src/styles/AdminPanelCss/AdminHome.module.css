@@ -153,9 +153,25 @@
     gap: 8px;
 }
 
-.number h3 { font-size: 1.3rem; margin: 0; color: #333; }
-.number p { font-size: 1rem; font-weight: 600; color: #444; margin: 5px 0; }
-.number input { padding: 12px; border-radius: 8px; border: 1px solid #d1c4bc; outline: none; }
+.number h3 {
+    font-size: 1.3rem;
+    margin: 0;
+    color: `#333`;
+}
+
+.number p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: `#444`;
+    margin: 5px 0;
+}
+
+.number input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid `#d1c4bc`;
+    outline: none;
+}
 
 /* Buttons styling */
 .quote button, .about button {
