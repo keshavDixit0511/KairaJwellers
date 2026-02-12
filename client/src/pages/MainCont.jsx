@@ -10,7 +10,7 @@ import Services from "../components/LandingPage/Services.jsx";
 import { ContactCon } from "../Context/ContactContext.jsx";
 import axios from "axios";
 const MainCont = () => {
-  const{setPage1} = useContext(ContactCon)
+  const { setPage1 } = useContext(ContactCon)
 
   // here we are fetching data . trying to hit the route in the backend landingPage.route.js 
   useEffect(() => {
@@ -30,7 +30,7 @@ const MainCont = () => {
     };
     fetchData();
   }, [setPage1])
-  
+
   return (
     <div>
       <AnimationCompo />
@@ -39,7 +39,7 @@ const MainCont = () => {
       <Services />
       <BlackBanner />
       <Testimonials />
-    </div> 
+    </div>
   );
 };
 
