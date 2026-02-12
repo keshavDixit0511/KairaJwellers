@@ -28,6 +28,7 @@ const Navbar = ({ setPage }) => {
       {/* Menu Items */}
       <div className={`${styles.menuItems} ${menuOpen ? styles.showMenu : ""}`}>
         <p className={activePage === "home" ? styles.active : ""} onClick={() => handleClick("home")}>Home</p>
+        <p className={activePage === "testimonial" ? styles.active : ""} onClick = {() => handleClick("testimonial")}>Testimonials</p>
         <p className={activePage === "stores" ? styles.active : ""} onClick={() => handleClick("stores")}>Stores</p>
         <p className={activePage === "gallery" ? styles.active : ""} onClick={() => handleClick("gallery")}>Gallery</p>
         <p className={activePage === "franchise" ? styles.active : ""} onClick={() => handleClick("franchise")}>Franchise</p>

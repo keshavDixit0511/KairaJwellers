@@ -1,0 +1,166 @@
+/* AdminTestimonial.module.css */
+
+.testimonialContainer {
+    width: 100%;
+    background-color: #F8F7F4;
+    min-height: 100vh;
+    padding: 2rem;
+    padding-left: 6rem; /* Matching your Home layout */
+    color: #3A2E2E;
+}
+
+.testimonialContainer h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #645555;
+    width: fit-content;
+    padding-bottom: 0.5rem;
+}
+
+/* ===== Live Testimonials Grid ===== */
+.currentList {
+    margin-bottom: 3rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.card {
+    background: #FFFFFF;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, border 0.2s ease;
+    border: 2px solid transparent;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #a37f7f;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #645555;
+}
+
+.card h4 {
+    margin: 0;
+    color: #3A2E2E;
+    font-size: 1.1rem;
+}
+
+.card p {
+    margin: 0.2rem 0;
+    font-size: 0.85rem;
+    color: #7B6F6F;
+    line-height: 1.4;
+}
+
+.card small {
+    color: #a37f7f;
+    font-weight: bold;
+}
+
+/* ===== Form Section ===== */
+.formSection {
+    background: #FFFFFF;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;
+    max-width: 800px;
+}
+
+.formSection h3 {
+    margin-bottom: 1.5rem;
+    color: #5c4040;
+}
+
+.formSection form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.formSection input, 
+.formSection textarea, 
+.formSection select {
+    padding: 0.8rem;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    background-color: #fafafa;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.formSection input:focus, 
+.formSection textarea:focus {
+    border-bottom-color: #645555;
+}
+
+.formSection textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* ===== Word Count Styling ===== */
+.countBox {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: -0.5rem;
+}
+
+.valid {
+    color: #2e7d32; /* Green */
+}
+
+.invalid {
+    color: #d32f2f; /* Red */
+}
+
+/* ===== Submit Button ===== */
+.formSection button {
+    background-color: #645555;
+    color: #FFFFFF;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+    width: fit-content;
+}
+
+.formSection button:hover {
+    background-color: #523E3E;
+    transform: scale(1.02);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .testimonialContainer {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .formSection button {
+        width: 100%;
+    }
+}

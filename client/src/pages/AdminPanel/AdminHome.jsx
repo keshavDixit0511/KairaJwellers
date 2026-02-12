@@ -149,15 +149,6 @@ const Home = () => {
                 </div>
               ))
             }
-
-            {/* {data.about.numberData.map((number, index) => (
-              <div key={index}>
-                <h3>{number.name}</h3>
-                <p>{number.num}</p>
-                <input type="text" />
-                <button>Edit here</button>
-              </div>
-            ))} */}
           </span>
         </div>
       </div>   

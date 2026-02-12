@@ -7,6 +7,7 @@ import AdminFranchise from "./AdminFranchise";
 import AdminJwellery from "./AdminJwellery";
 import Assists from './Assists'
 import style from '../../styles/AdminPanelCss/AdminPage.module.css'
+import Testimonial from "./Testimonial";
 
 
 const AdminPage = () => {
@@ -17,6 +18,8 @@ const AdminPage = () => {
     switch (page) {
       case "home":
         return <Home />;
+      case "testimonial":
+        return <Testimonial/>;
       case "stores":
         return <Stores />;  
       case "gallery":
