@@ -541,7 +541,7 @@ router.post("/:jewelleryName/bulk-subcategories", async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
-});
+}); 
 
 /**
  * DELETE: Remove a photo
