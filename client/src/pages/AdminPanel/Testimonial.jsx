@@ -79,7 +79,7 @@ const Testimonial = () => {
           
           <input 
             type="text" 
-            placeholder="Image URL (RandomUser API suggested)" 
+            placeholder="Image URL (Paste Image URL)" 
             value={formData.img}
             onChange={(e) => setFormData({...formData, img: e.target.value})}
             required 
