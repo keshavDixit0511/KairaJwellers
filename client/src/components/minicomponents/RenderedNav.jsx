@@ -1,93 +1,68 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import style from "../../styles/minicomponents/RenderedNav.module.css";
-import img from "../../assets/Images/jewellery.jpg";
 import { ContactCon } from "../../Context/ContactContext";
-import ban1 from '../../assets/Images/loadedImgData/dBanner.jpg'
-import ban2 from '../../assets/Images/loadedImgData/gBanner.jpg'
-import ban3 from '../../assets/Images/loadedImgData/sBanner.jpg'
-import img1 from '../../assets/Images/gold/g1.webp'
-import img2 from '../../assets/Images/gold/g2.webp'
-import img3 from '../../assets/Images/gold/g3.webp'
-import img4 from '../../assets/Images/gold/g4.webp'
-import img5 from '../../assets/Images/gold/g5.webp'
 import { useNavigate } from 'react-router-dom'
 
+import axios  from 'axios';
 
-const items = [
-  {
-    name: "Gold",
-    items: [
-      "Jhumkas",
-      "Bangles",
-      "Necklaces",
-      "Kadas",
-      "Earrings",
-      "Bracelets",
-      "Gold Chains",
-      "Pendants",
-      "Rings",
-      "Engagement Rings",
-      "Nose Pins",
-      "Mangalsutras"
-    ]
-  },
-  {
-    name: "Diamond",
-    items: [
-      "Rings",
-      "Bracelets",
-      "Gold Chains",
-      "Earrings",
-      "Bangles",
-      "Necklaces",
-      "Jhumkas",
-      "Engagement Rings",
-      "Mangalsutras",
-      "Nose Pins",
-      "Kadas",
-      "Pendants"
-    ]
-  },
-  {
-    name: "Silver",
-    items: [
-      "Mangalsutras",
-      "Nose Pins",
-      "Kadas",
-      "Pendants",
-      "Jhumkas",
-      "Bangles",
-      "Bracelets",
-      "Earrings",
-      "Gold Chains",
-      "Rings",
-      "Engagement Rings",
-      "Necklaces"
-    ]
-  }
-];
 
-const category = [
-  { name: "Diamond", banner: ban1 },
-  { name: "Gold", banner: ban2 },
-  { name: "Silver", banner: ban3 }
-];
 
 const RenderedNav = () => {
+  const [categories, setCategories] = useState([]); //Dynamic Metal Data (Gold, Silver, Diamond)
+  const [subCategories, setSubCategories] = useState([]); //Dynamic subMetal Data (jumka, ring, pendants)
   const [activeIdx, setActiveIdx] = useState(0);
-  const { setLoadedDataName, loadedDataName } = useContext(ContactCon)
+  const {setLoadedDataName} = useContext(ContactCon);  
   const navigate = useNavigate()
 
+  // Fetch Main Categories 
+  useEffect(() => {
+    const fetchMainCategories = async () => {
+      try {
+        const res = await axios.get('/api/jewellery');
+        setCategories(res.data.jewelleries);
+      } catch (error) {
+        console.error("Error fetching main categories:", error);
+      }
+    };
+    fetchMainCategories();
+  },[]);
 
-  const handleRequiredData = ()=>{
-    if(true){
-      // here call the api for the requested data 
-      navigate('/Jewellery')
-    }else{
-      return
+  useEffect(() => {
+    if(categories.length > 0) {
+      const fetchSubCategories = async () => {
+        const currentMetal = categories[activeIdx].name;
+        try {
+          const res = await axios.get(`/api/jewellery/${currentMetal}/subcategories/names`);
+          setSubCategories(res.data.subcategoryNames);
+        } catch (error) {
+          console.error("Error fetching subcategories:", error);
+        }
+      };
+      fetchSubCategories();
     }
-  
- 
+  }, [activeIdx, categories]);
+
+
+  const handleCategoryClick = (ctg) => {
+    // this triger the view all logic for the jewelley page for the metal (Gold, Silver, Diamond)
+    setLoadedDataName({
+      name: ctg.name,
+      banner: ctg.banner,
+      type: 'all' //tell the target page to fetch from /:name/all/page/1
+    });
+    navigate('/Jewellery');
+  }
+
+  const handleSubCategoryClick = (subName) => {
+    const currentMetal = categories[activeIdx];
+    //this triger the specific subcategory fetch
+    setLoadedDataName({
+      name: currentMetal.name,
+      banner: currentMetal.banner,
+      subCategory: subName,
+      type: 'specific' //tell the target page to fetch from /:name/subCategory/:sub/photos/page/1
+    });
+    navigate('/Jewellery');
   }
 
   return (
@@ -95,35 +70,39 @@ const RenderedNav = () => {
       <div className={style.renNav_Wrapper}>
         {/* left bar  */}
         <div className={style.left_Col}>
-          {/* category  */}
+          {/* category  / Main metal column (GOLD , SILVER, DIAMOND) */}
           <div className={style.categories}>
-            {category.map((ctg, idx) => (
+            {categories.map((ctg, idx) => (
               <h2
-                key={idx}
+                key={ctg._id}
                 className={activeIdx === idx ? style.active : ""}
-                onClick={() => {
-                  setActiveIdx(idx);
-                  setLoadedDataName({ name: ctg.name, banner: ctg.banner, images:[img1,img2,img3,img4,img5 ]}); //add images in that after api call
-                  handleRequiredData()
-                }}
+                onMouseEnter={() => setActiveIdx(idx)} // switch subs on hover
+                onClick={() => handleCategoryClick(ctg)} //view ALl on click
               >
-                {ctg.name}
+                {ctg.name.toUpperCase()}
               </h2>
             ))}
           </div>
+
+          {/* subCategories column */}
           <div className={style.middle_ctgy}>
-            {items[activeIdx].items.map((subItem, idx) => (
-              <div key={subItem + idx}>
-                {/* You can add an image for each subItem if available */}
-                {/* <img src="" alt="" /> */}
-                <h1>{subItem}</h1>
-              </div>
-            ))}
+            {
+              subCategories.map((subItem, idx) => (
+                <div key={idx} onClick={() => handleSubCategoryClick(subItem)} className={style.subItemCard}>
+                  <h1>{subItem.charAt(0).toUpperCase() + subItem.slice(1)}</h1>
+                </div>
+              ))
+            }
           </div>
         </div>
         {/* right bar  */}
         <div className={style.right_Col}>
-          <img src={img} alt="" />
+          {/* Display the banner of the currently hovered main category */}
+          {
+            categories[activeIdx] && (
+              <img key={activeIdx} src={categories[activeIdx].banner} alt={`${categories[activeIdx].name} banner`} />
+            )
+          }
         </div>
       </div>
     </div>

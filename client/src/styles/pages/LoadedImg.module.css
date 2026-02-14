@@ -1,77 +1,213 @@
-.jewellery_Cont{
-    width: 100%;
-    margin-bottom: 2rem;
+.jewellery_Cont {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fffaf5; /* Creamy premium background */
 }
 
-.banner{
-    width: 100%;
-    height: 35vh;
-    overflow: hidden ;
-}
-.img_Cont{
-    width: 100%;
-    height: 100%;
-}
-.img_Cont img{
-    object-fit: cover;
-    object-position: center;
+/* Banner Styling */
+.banner {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  overflow: hidden;
 }
 
-.jewellery_Wrapper{
-    margin-top: 2rem;
-    background: rgb(255, 250, 251);
-    padding:1rem 4rem;
-}
-.jewellery_Wrapper h1{
-    font-size: 3rem;
-    font-weight: 400;
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 4px;
+.img_Cont {
+  width: 100%;
+  height: 100%;
 }
 
-.img_Cont1{
+.img_Cont img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner_Overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner_Overlay h1 {
+  color: white;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: 'serif';
+}
+
+/* Content Wrapper */
+.jewellery_Wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.title_Section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.title_Section span {
+  color: #b36464;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+
+.title_Section h2 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+
+/* Responsive Grid */
+.img_Grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.img_Hold {
+  background: white;
+  padding: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.img_Hold:hover {
+  transform: translateY(-5px);
+}
+
+.img_Wrapper {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.img_Wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: scale 0.5s ease;
+}
+
+.img_Hold:hover .img_Wrapper img {
+  scale: 1.1;
+}
+
+/* Hover "Visit Shop" Effect */
+.animated_div {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  background: rgba(179, 100, 100, 0.9);
+  color: white;
+  padding: 12px;
+  text-align: center;
+  transition: bottom 0.3s ease;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.img_Hold:hover .animated_div {
+  bottom: 0;
+}
+
+.item_Info {
+  padding: 15px 5px;
+  text-align: center;
+}
+
+.item_Info p {
+  font-size: 1.1rem;
+  color: #444;
+  font-weight: 500;
+}
+
+.title_Container {
+    width: 100%;
     display: flex;
-    justify-content: start;
-    /* align-items: center; */
-    flex-wrap: wrap;
-    gap: 2rem;
-    width: 100%;
+    flex-direction: column;
+    align-items: center; /* Centers everything */
+    justify-content: center;
+    padding: 40px 0 20px 0;
+    text-align: center;
+    background-color: transparent;
 }
 
-.img_Hold{
-    position: relative;
-    overflow: hidden;
-    width: 20%;
-    cursor: pointer;
+/* The "GOLD" or "SILVER" text */
+.category_Tag {
+    font-size: 0.95rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #b36464; /* Elegant copper/rose gold tone */
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
 }
 
-.img_Hold img{
-    width: 100%;
-    object-fit: cover;
-    transition: all 10s ease;
-    z-index: 0;
+/* The "NOSE PIN" or "RINGS" text */
+.subcategory_Title {
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', 'Georgia', serif; /* Use a serif font for luxury */
+    color: #2c2c2c;
+    text-transform: capitalize;
+    margin: 0;
+    font-weight: 400;
 }
 
-.animated_div{
-    position: absolute;
-    background: rgb(227, 227, 227);
-    padding: 0.3rem 1rem;
-    border-radius: 50px 0 0 50px ;
-    transform: translate(110%);
-    opacity: 0.7;
-    bottom: 20%;
-    right: 0;
-    width: 50%;
-    box-shadow: 0px 0px 10px 2px rgb(192, 192, 192);
-    transition: all 1s ease;
-    z-index: 5;
+/* A small decorative line underneath */
+.divider {
+    width: 60px;
+    height: 2px;
+    background-color: #d4af37; /* Metallic Gold color */
+    margin-top: 15px;
 }
 
-/* Only scale up the image when hovering over the .img_Hold */
-.img_Hold:hover img{
-    transform: scale(1.2);
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .subcategory_Title {
+        font-size: 1.8rem;
+    }
+    .category_Tag {
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+    }
 }
-.img_Hold:hover .animated_div{
-    transform: translate(0);
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .banner_Overlay h1 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+  
+  .img_Grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
+  }
+  
+  .img_Wrapper {
+    height: 200px;
+  }
+}
+
+.loader, .no_data {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #888;
+  padding: 100px 0;
 }
